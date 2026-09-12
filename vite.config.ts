@@ -5,10 +5,11 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  root: path.join(__dirname, 'src'),
   build: {
     rollupOptions: {
       input: {
-        main: path.join(__dirname, 'index.html'),
+        main: path.join(__dirname, '/src/index.html'),
       },
     }
   },
@@ -17,7 +18,7 @@ export default defineConfig({
     electron({
       main: {
         // Shortcut of `build.lib.entry`.
-        entry: 'electron/main.ts',
+        entry: path.join(__dirname, 'electron/main.ts'),
       },
       preload: {
         // Shortcut of `build.rollupOptions.input`.

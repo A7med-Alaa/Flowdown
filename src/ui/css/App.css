@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+}
+
+.topbar {
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.svg-button {
+    background: none;
+    padding: 4px;
+    border: none;
+    border-radius: 4px;
+}
+
+.svg-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
